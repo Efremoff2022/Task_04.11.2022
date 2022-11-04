@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .userid_1, .userid_2, .userid_3, .userid_4, .userid_5, .userid_6, .userid_7 {
+            float: left;
+            margin-right: 20px;
+            width: 300px;
+            height: 230px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        .userid_6, .userid_7 {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .checkbox-checked {
+            background: grey;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .checkbox-checked {
+            transition: 0.2s;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+
+            $('.userid_1, .userid_2, .userid_3, .userid_4, .userid_5, .userid_6, .userid_7').on('change', 'input[type="checkbox"]', function (event) {
+
+                $(event.delegateTarget).toggleClass('checkbox-checked', this.checked)
+
+            }).find('input[type="checkbox"]').trigger('change');
+
+        });
+    </script>
+</head>
+<body>
+    <div class="userid_1">
+        <h1>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</h1>
+
+        <p>
+            quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+
+    <div class="userid_2">
+        <h1>qui est esse</h1>
+
+        <p>
+            est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores 
+            neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui 
+            aperiam non debitis possimus qui neque nisi nulla
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+
+    <div class="userid_3">
+        <h1>ea molestias quasi exercitationem repellat qui ipsa sit aut</h1>
+
+        <p>
+            et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem 
+            doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore 
+            et velit aut
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+
+    <div class="userid_4">
+        <h1>eum et est occaecati</h1>
+
+        <p>
+            ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda 
+            provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque 
+            ipsam iure\nquis sunt voluptatem rerum illo velit
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+
+    <div class="userid_5">
+        <h1>nesciunt quas odio</h1>
+
+        <p>
+            repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed 
+            est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur 
+            dolor neque
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+
+    <div class="userid_6">
+        <h1>dolorem eum magni eos aperiam quia</h1>
+
+        <p>
+            ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid 
+            molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate 
+            dolores velit et doloremque molestiae
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+
+    <div class="userid_7">
+        <h1>magnam facilis autem</h1>
+
+        <p>
+            dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo 
+            aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea 
+            sed quas
+        </p>
+        <input type="checkbox" id="one" value="Отправить">
+    </div>
+</body>
+</html>
